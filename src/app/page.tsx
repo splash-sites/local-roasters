@@ -87,7 +87,7 @@ export default function Home() {
             </ButtonLink>
           </div>
           {/* Carrossel no celular, grade no desktop */}
-          <div className="no-scrollbar -mx-4 flex snap-x gap-3.5 overflow-x-auto px-4 md:mx-0 md:grid md:grid-cols-3 md:gap-7 md:overflow-visible md:px-0">
+          <div className="no-scrollbar -mx-4 flex snap-x snap-mandatory scroll-px-4 gap-3.5 overflow-x-auto px-4 md:mx-0 md:scroll-px-0 md:grid md:grid-cols-3 md:gap-7 md:overflow-visible md:px-0">
             {coffees.map((p) => (
               <CoffeeCard key={p.slug} product={p} className="w-65 shrink-0 snap-start md:w-auto" />
             ))}
@@ -134,7 +134,7 @@ export default function Home() {
               Selecionamos o café verde, pesamos cada carga, acompanhamos a curva de torra e provamos cada lote antes de embalar. Pequenos lotes, torrados com frequência, para o café chegar fresco até você.
             </p>
           </div>
-          <div className="no-scrollbar -mx-4 flex snap-x gap-3 overflow-x-auto px-4 md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0">
+          <div className="no-scrollbar -mx-4 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 md:mx-0 md:scroll-px-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0">
             {[
               ["/images/torra-pesagem.jpg", "Pesagem do café verde", "Seleção e pesagem do café verde"],
               ["/images/torra-sala.jpg", "Acompanhamento da curva de torra no computador", "Torra com perfil acompanhado"],
