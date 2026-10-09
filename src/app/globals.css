@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #11100f;
+  --color-cream: #f4f1ea;
+  --color-sand: #eae4d8;
+  --color-line: #d6cdbc;
+  --color-muted: #5a544c;
+  --color-muted-dark: #cfc7b9;
+  --color-rule-dark: #3a3631;
+  --color-accent: #e0832f;
+
+  --font-display: var(--font-anton), Impact, sans-serif;
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Rolagem horizontal sem barra (carrosséis no celular) */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
